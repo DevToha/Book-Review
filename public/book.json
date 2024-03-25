@@ -1,9 +1,25 @@
 [
     {
-        "bookId": 1,
+        "c": 1,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/FH17vPB/71-Q1t-Pup-Kj-L-AC-UF1000-1000-QL80.jpg",
+        "review": "A delightful comedy of manners with memorable characters.",
+        "totalPages": 279,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Satire"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 2,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "image": "great_gatsby.jpg",
+        "image": "https://i.ibb.co/YB9YMgh/XL.jpg",
         "review": "A timeless classic that captures the essence of the Jazz Age.",
         "totalPages": 180,
         "rating": 4.5,
@@ -16,10 +32,10 @@
         "yearOfPublishing": 1925
     },
     {
-        "bookId": 2,
+        "bookId": 3,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "image": "to_kill_a_mockingbird.jpg",
+        "image": "https://i.ibb.co/z58L2yj/GUEST-1607358e-8a84-4160-b93f-15b30b146a9f.jpg",
         "review": "A powerful story that addresses themes of racial injustice and moral growth.",
         "totalPages": 324,
         "rating": 4.7,
@@ -32,10 +48,10 @@
         "yearOfPublishing": 1960
     },
     {
-        "bookId": 3,
+        "bookId": 4,
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
-        "image": "catcher_in_the_rye.jpg",
+        "image": "https://i.ibb.co/kM4mgFc/b38578624-84881.jpg",
         "review": "A compelling narrative of teenage angst and rebellion.",
         "totalPages": 224,
         "rating": 4.3,
@@ -48,10 +64,10 @@
         "yearOfPublishing": 1951
     },
     {
-        "bookId": 4,
+        "bookId": 5,
         "bookName": "1984",
         "author": "George Orwell",
-        "image": "1984.jpg",
+        "image": "https://i.ibb.co/GP2Fc3b/61-NAx5pd6-XL-AC-UF1000-1000-QL80.jpg",
         "review": "A dystopian masterpiece that explores the dangers of totalitarianism.",
         "totalPages": 328,
         "rating": 4.6,
@@ -64,10 +80,10 @@
         "yearOfPublishing": 1949
     },
     {
-        "bookId": 5,
+        "bookId": 6,
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
-        "image": "the_hobbit.jpg",
+        "image": "https://i.ibb.co/BT5BQgY/44661897330718.jpg",
         "review": "An enchanting adventure set in the world of Middle-earth.",
         "totalPages": 310,
         "rating": 4.8,
@@ -78,21 +94,5 @@
         ],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
-    },
-    {
-        "bookId": 6,
-        "bookName": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "image": "pride_and_prejudice.jpg",
-        "review": "A delightful comedy of manners with memorable characters.",
-        "totalPages": 279,
-        "rating": 4.4,
-        "category": "Fiction",
-        "tags": [
-            "Romance",
-            "Satire"
-        ],
-        "publisher": "T. Egerton, Whitehall",
-        "yearOfPublishing": 1813
     }
 ]
