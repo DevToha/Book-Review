@@ -1,0 +1,98 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "great_gatsby.jpg",
+        "review": "A timeless classic that captures the essence of the Jazz Age.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Classics",
+            "Romance"
+        ],
+        "publisher": "Scribner",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "to_kill_a_mockingbird.jpg",
+        "review": "A powerful story that addresses themes of racial injustice and moral growth.",
+        "totalPages": 324,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": [
+            "Classic",
+            "Social Issues"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "catcher_in_the_rye.jpg",
+        "review": "A compelling narrative of teenage angst and rebellion.",
+        "totalPages": 224,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "Coming of Age",
+            "Literary Fiction"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 4,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "1984.jpg",
+        "review": "A dystopian masterpiece that explores the dangers of totalitarianism.",
+        "totalPages": 328,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Dystopian",
+            "Political"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "the_hobbit.jpg",
+        "review": "An enchanting adventure set in the world of Middle-earth.",
+        "totalPages": 310,
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": [
+            "Adventure",
+            "Epic Fantasy"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 6,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "pride_and_prejudice.jpg",
+        "review": "A delightful comedy of manners with memorable characters.",
+        "totalPages": 279,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Satire"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    }
+]
