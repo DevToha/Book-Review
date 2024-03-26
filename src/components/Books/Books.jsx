@@ -13,7 +13,7 @@ const Books = () => {
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl">Books:{books.length}</h2>
+            <h2 className="text-center font-bold text-4xl mb-10">Books:{books.length}</h2>
 
             <div className="grid grid-cols-3 ml-10">
                 {

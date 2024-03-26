@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import book from '../Images/The-Night-Circus.jpg'
 
 
@@ -8,7 +9,7 @@ const Banner = () => {
                 <div>
                     <h3 className=' font-bold text-5xl my-5'>Books to freshen</h3>
                     <h3 className=' font-bold text-5xl my-5'>up your bookshelf</h3>
-                    <button className='btn bg-[#23BE0A] mt-10 text-white'>View The List</button>
+                    <NavLink to="/ListedBooks"><button className='btn bg-[#23BE0A] mt-10 text-white'>View The List</button></NavLink>
                 </div>
                 <div>
                     <img className='w-[210px] h-[300px]' src={book} alt="" />
