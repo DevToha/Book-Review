@@ -1,22 +1,26 @@
-import { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
-import { getStoredReadBook } from "../Utility/LocalStorage";
+import { useEffect, useState } from "react";
+import { getBooks } from "../Utility/LocalStorage";
+import ReadBook from "./ReadBook";
+
 
 
 const ReadBooks = () => {
-    const Books = useLoaderData();
+    const [book, setBook] = useState([])
 
     useEffect(() => {
-        const storedReadBookIds = getStoredReadBook()
-        if (Books.length > 0) {
-            const bookRead = Books.filter(readBook => storedReadBookIds.includes(readBook.bookId))
-            console.log(bookRead)
-        }
+        const storedBook = getBooks()
+        setBook(storedBook)
     }, [])
 
     return (
         <div>
-            ReadBooks:
+            {/* ReadBooks:{book[1]} */}
+            {/* name:{book[1]} */}
+            <div>
+                {
+                    book.map(books => <ReadBook key={books.bookId} books={books}></ReadBook>)
+                }
+            </div>
         </div>
     );
 };
