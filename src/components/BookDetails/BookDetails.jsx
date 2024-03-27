@@ -13,8 +13,8 @@ const BookDetails = () => {
 
     const handleReadBook = books => {
 
-        saveBook(books)
-        // console.log(books)
+        saveBook(bookIdInt)
+        console.log(books)
         // toast('Read Book')
     }
 
