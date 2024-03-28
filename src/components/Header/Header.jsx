@@ -7,6 +7,9 @@ const Header = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/ListedBooks">Listed Books</NavLink></li>
         <li><NavLink to="/PagesRead">Pages to Read</NavLink></li>
+        <li><NavLink to="/TopRatedBook">Top Rated Book</NavLink></li>
+        <li><NavLink to="/TopRatedAuthor">Our Top Author</NavLink></li>
+        
     </>
 
     return (
@@ -17,19 +20,20 @@ const Header = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 font-medium"> 
                         {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn lg:mr-10 text-white bg-[#23BE0A] lg:w-[]">Sign In</a>
+                    <a className="btn bg-[#50B1C9] text-white">Sign Up</a>
                 </div>
             </div>
         </div>

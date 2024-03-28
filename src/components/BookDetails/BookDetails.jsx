@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveBook } from "../Utility/LocalStorage";
+import { useState } from "react";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -10,22 +11,29 @@ const BookDetails = () => {
     const bookIdInt = parseInt(bookId)
     const book = books.find(book => book.bookId === bookIdInt)
     console.log(book)
+    const [clicked, setClicked] = useState(false)
 
     const handleReadBook = books => {
 
         saveBook(bookIdInt)
         console.log(books)
+        if (clicked) {
+            toast.success('Already read');
+        } else {
+            setClicked(true);
+        }
         // toast('Read Book')
     }
 
     const handleWishlist = () => {
+        saveBook(bookIdInt)
         toast('Added to Wishlist')
     }
 
     return (
-        <div className="flex justify-center gap-32 mt-10">
-            <div>
-                <img className="w-[400px] h-[570px] rounded-md" src={book.image} alt="" />
+        <div className="flex justify-center gap-32 mt-10 ">
+            <div className="bg-[#1313130D] rounded-2xl w-[400px] h-[570px] pl-[75px] pt-[117px]">
+                <img className="w-[246px] h-[328px] rounded-md" src={book.image} alt="" />
             </div>
 
             <div>
@@ -49,8 +57,8 @@ const BookDetails = () => {
                     <hr />
                 </div>
                 <div className="flex gap-7">
-                    <button onClick={() => handleReadBook(books)} className="btn w-[96px] btn-outline border-gray-300">Read</button>
-                    <button onClick={handleWishlist} className="btn bg-[#50B1C9] w-[120px] text-white">Wishlist</button>
+                    <button onClick={() => handleReadBook(books)} className="btn w-[96px] btn-outline border-gray-300">{clicked ? "Readed" : "Read"}</button>
+                    <button onClick={() => handleWishlist(books)} className="btn bg-[#50B1C9] w-[120px] text-white">Wishlist</button>
                 </div>
                 <ToastContainer />
 

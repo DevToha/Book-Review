@@ -11,9 +11,9 @@ const Book = ({ book }) => {
         <div>
             <Link to={`/book/${bookId}`}>
                 <div className='mb-10'>
-                    <div className="w-[450px] border  p-[23px] rounded-2xl">
-                        <div className='h-[310px] pt-[50px] w-[402px] rounded-2xl bg-[#1313130D]'>
-                            <img className='h-[210px] ml-[122px] rounded-xl ' src={image} alt="" />
+                    <div className="lg:w-[450px] border  p-[23px] rounded-2xl">
+                        <div className='h-[310px] pt-[50px] lg:w-[402px] w-[255px] rounded-2xl bg-[#1313130D]'>
+                            <img className='h-[210px] lg:ml-[122px] ml-[55px] rounded-xl ' src={image} alt="" />
                         </div>
                         <div className=' flex gap-5 mt-6 font-bold text-base text-[#23BE0A]'>
                             <div className='bg-[#23BE0A0D] w-[125px] h-[43px] text-center pt-2 rounded-full '>{tags[0]}</div>

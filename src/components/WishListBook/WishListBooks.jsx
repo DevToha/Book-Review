@@ -4,13 +4,10 @@ import { IoMdContacts } from "react-icons/io";
 import { FaRegFileAlt } from "react-icons/fa";
 
 
-
-const ReadBook = ({ books }) => {
-    const {bookName, author, totalPages, image, rating, category, publisher, tags, yearOfPublishing } = books
+const WishListBooks = ({ books }) => {
+    const { bookName, author, totalPages, image, rating, category, publisher, tags, yearOfPublishing } = books
     return (
         <div>
-            {/* name:{bookName} */}
-
             <div className='p-[30px]'>
                 <div className="flex border border-gray-300 rounded-lg p-7 gap-10">
                     <div className='h-[250px] pl-[80px] pt-4 rounded-2xl w-[342px] bg-[#1313130D] '>
@@ -71,8 +68,9 @@ const ReadBook = ({ books }) => {
     );
 };
 
-ReadBook.propTypes = {
+WishListBooks.propTypes = {
     books: PropTypes.object
 }
 
-export default ReadBook;
+
+export default WishListBooks;

@@ -1,10 +1,6 @@
-// import { Link } from "react-router-dom";
-// import ReadAndWishlistBooks from "../ReadBooks and Wishlist Books/ReadAndWishlistBooks";
-// import ReadBooks from "../ReadBooks/ReadBooks";
 
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -14,21 +10,21 @@ const ListedBooks = () => {
                 <p className="font-bold text-2xl ">Books</p>
             </div>
 
-            {/* <div className="text-center mt-10">
-                <ul className="menu lg:menu-horizontal text-white rounded-box lg:mb-64 bg-[#23BE0A]">
+            <div className="text-center mt-10">
+                <ul className="menu lg:menu-horizontal rounded-box mb-10 bg-[#23BE0A]">
                     <li>
                         <details open>
                             <summary>Sort By</summary>
                             <ul>
-                                <li><a>Sort By</a></li>
                                 <Link><li><a>Rating</a></li></Link>
-                                <li><a>Number of Pages:</a></li>
-                                <li><a>Year of Publishing:</a></li>
+                                <li><a>Number of Pages</a></li>
+                                <li><a>Year of Publishing</a></li>
                             </ul>
                         </details>
                     </li>
                 </ul>
-            </div> */}
+            </div>
+
             <div className="mt-7">
                 <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap dark:bg-gray-100 dark:text-gray-800">
 

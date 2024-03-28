@@ -9,10 +9,10 @@ const Footer = () => {
 
                 <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-20 md:container md:mx-auto">
                     <nav>
-                        <h3 className="font-black text-4xl">Recipe Calories</h3>
+                        <h3 className="font-black text-4xl">Book Vibe</h3>
                     </nav>
                     <nav>
-                        <p className="text-gray-500">Explore our online restaurant where every dishs calorie count is meticulously <br /> provided for guilt-free indulgence.
+                        <p className="text-gray-500">Explore our online book page where every book is meticulously <br /> provided for guilt-free indulgence.
                         </p>
                     </nav>
                     <nav>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </nav>
                     <aside>
                         <div className="lg:w-[825px] w-[215px] h-1 bg-[#1313181A]"></div>
-                        <p className="text-gray-500 mt-7">2017, All Rights Reserved.</p>
+                        <p className="text-gray-500 mt-7">2024, All Rights Reserved.</p>
                     </aside>
                 </footer>
 
