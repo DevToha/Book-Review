@@ -5,27 +5,22 @@ import WishListBooks from "./WishListBooks";
 
 const WishListBook = () => {
     const loadBooks = useLoaderData()
-    const [book, setBook] = useState([])
+    const [WishBook, setWishBook] = useState([])
 
     useEffect(() => {
-        const storedBook = getBooks()
+        const storedWishBook = getBooks()
         if (loadBooks.length > 0) {
 
 
             const bookLoad = [];
-            for (const bookId of storedBook) {
+            for (const bookId of storedWishBook) {
                 const loadBook = loadBooks.find(loadBook => loadBook.bookId === bookId)
                 if (loadBook) {
                     bookLoad.push(loadBook)
                 }
             }
 
-            setBook(bookLoad)
-
-            // const bookLoad = loadBooks.filter(loadBook => storedBook.includes(loadBook.bookId))
-
-
-            // console.log(loadBooks, storedBook, bookLoad)
+            setWishBook(bookLoad)
         }
     }, [])
     return (
@@ -33,7 +28,7 @@ const WishListBook = () => {
 
             <div>
                {
-                    book.map(books => <WishListBooks key={books.bookId} books={books}></WishListBooks>)
+                    WishBook.map(books => <WishListBooks key={books.bookId} books={books}></WishListBooks>)
                 }
                </div>
         </div>

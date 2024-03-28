@@ -9,7 +9,7 @@ const Header = () => {
         <li><NavLink to="/PagesRead">Pages to Read</NavLink></li>
         <li><NavLink to="/TopRatedBook">Top Rated Book</NavLink></li>
         <li><NavLink to="/TopRatedAuthor">Our Top Author</NavLink></li>
-        
+
     </>
 
     return (
@@ -24,18 +24,19 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
+                    <a className="btn btn-ghost lg:text-3xl text-xl font-bold">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 font-medium"> 
+                    <ul className="menu menu-horizontal px-1 font-medium">
                         {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn lg:mr-10 text-white bg-[#23BE0A] lg:w-[]">Sign In</a>
-                    <a className="btn bg-[#50B1C9] text-white">Sign Up</a>
+                    <a className="btn lg:mr-10 text-white bg-[#23BE0A]">Sign In</a>
+                    <a className="btn bg-[#50B1C9] text-white lg:inline hidden pt-4">Sign Up</a>
                 </div>
             </div>
+           
         </div>
     );
 };

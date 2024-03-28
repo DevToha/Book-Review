@@ -11,7 +11,7 @@ const ListedBooks = () => {
             </div>
 
             <div className="text-center mt-10">
-                <ul className="menu lg:menu-horizontal rounded-box mb-10 bg-[#23BE0A]">
+                <ul className="menu menu-horizontal rounded-box lg:mb-10 bg-[#23BE0A]">
                     <li>
                         <details open>
                             <summary>Sort By</summary>
