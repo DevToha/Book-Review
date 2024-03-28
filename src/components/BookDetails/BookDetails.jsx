@@ -33,13 +33,13 @@ const BookDetails = () => {
     };
 
     return (
-        <div className="flex justify-center gap-32 mt-10">
-            <div className="bg-[#1313130D] rounded-2xl w-[400px] h-[570px] pl-[75px] pt-[117px]">
+        <div className="lg:flex justify-center gap-32 mt-10">
+            <div className="bg-[#1313130D] rounded-2xl lg:w-[400px] h-[570px] lg:pl-[75px] pl-6 pt-[117px]">
                 <img className="w-[246px] h-[328px] rounded-md" src={book.image} alt="" />
             </div>
 
             <div>
-                <div className="font-bold text-4xl">{book.bookName}</div>
+                <div className="font-bold text-4xl mt-3">{book.bookName}</div>
                 <p className='font-medium text-base my-4'>By: {book.author}</p>
                 <hr />
                 <p className='font-medium text-base my-4'>{book.category}</p>

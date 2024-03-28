@@ -119,7 +119,7 @@ const TriangleBar = (props) => {
 const PageToRead = () => {
 
     return (
-        <div className='mt-10 ml-14'>
+        <div className='mt-10 lg:ml-14'>
             <div>
                 <BarChart width={1200} height={400} data={data}>
                     {/* <Line dataKey="totalPages"></Line> */}
